@@ -37,7 +37,8 @@ public class MainActivity extends Activity {
 
 				// Do work that was waiting for the service to connect
 				try {
-					label.setText(audioPlayerService.getTrackTitle(1));
+					String text = audioPlayerService.getTrackTitle(1);
+					label.setText(text);
 				} catch (RemoteException e) {
 					throw new RuntimeException(e);
 				}

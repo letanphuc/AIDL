@@ -6,7 +6,7 @@ import android.os.RemoteException;
 public class AudioPlayerServiceImpl extends IAudioPlayerService.Stub {
 	@Override
 	public String getTrackTitle(int trackNumber) throws RemoteException {
-		return "Your Favorite Song";
+		return "Your Favorite Song " + trackNumber;
 	}
 
 	@Override
